@@ -11,9 +11,8 @@ Create an S3 bucket, Create a lamda function with a trigger that creates an imag
 
 ### Links and Resources
 
-- [ci/cd](https://github.com/tm-LBenson/cloud-server/actions) (GitHub Actions)
-- [server-prod-cli](http://d49cloudserver-env.eba-ykapze4m.us-east-1.elasticbeanstalk.com/)
-- [server-prod-upload-zip](https://d49-cloud-server-dev.us-east-1.elasticbeanstalk.com/)
+[images.json](https://numsandstuff.s3.amazonaws.com/images.json)
+
 
 ### Setup
 
