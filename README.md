@@ -11,9 +11,8 @@ Create an S3 bucket, Create a lamda function with a trigger that creates an imag
 
 ### Links and Resources
 
-- [ci/cd](https://github.com/tm-LBenson/cloud-server/actions) (GitHub Actions)
-- [server-prod-cli](http://d49cloudserver-env.eba-ykapze4m.us-east-1.elasticbeanstalk.com/)
-- [server-prod-upload-zip](https://d49-cloud-server-dev.us-east-1.elasticbeanstalk.com/)
+[images.json](https://numsandstuff.s3.amazonaws.com/images.json)
+
 
 ### Setup
 
@@ -21,13 +20,10 @@ Create an S3 bucket, Create a lamda function with a trigger that creates an imag
 
 There are no env requirements
 
-- PORT is set to process.env or 3001.
-  Application will run locally or deployed to AWS without setting any parameters manually
 
 #### How to initialize/run your application (where applicable)
 
-- nodemon
-  app.js is the primary JavaScript file for the server, and is located in the root folder.
+Upload a jpg to numsandstuff bucket, the lambda will be triggered by the upload, and update the images.json file. 
 
 #### Steps Create a new Bucket
 
