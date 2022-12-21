@@ -20,13 +20,10 @@ Create an S3 bucket, Create a lamda function with a trigger that creates an imag
 
 There are no env requirements
 
-- PORT is set to process.env or 3001.
-  Application will run locally or deployed to AWS without setting any parameters manually
 
 #### How to initialize/run your application (where applicable)
 
-- nodemon
-  app.js is the primary JavaScript file for the server, and is located in the root folder.
+Upload a jpg to numsandstuff bucket, the lambda will be triggered by the upload, and update the images.json file. 
 
 #### Steps Create a new Bucket
 
