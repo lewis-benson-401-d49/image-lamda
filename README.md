@@ -7,7 +7,7 @@
 
 ### Problem Domain
 
-Create an S3 bucket, Create a lamda function with a trigger that creates an images.json when a file is uploaded to the bucket. The JSON will include the image's meta data. 
+Create an S3 bucket; create a lambda function with a trigger that creates an images.json when a file is uploaded to the bucket. The JSON will include the image's metadata. 
 
 ### Links and Resources
 
@@ -18,30 +18,30 @@ Create an S3 bucket, Create a lamda function with a trigger that creates an imag
 
 #### `.env` requirements (where applicable)
 
-There are no env requirements
+There are no env requirements.
 
 
 #### How to initialize/run your application (where applicable)
 
-Upload a jpg to numsandstuff bucket, the lambda will be triggered by the upload, and update the images.json file. 
+Upload a jpg to the numsandstuff bucket; the lambda will be triggered by the upload and update the images.json file. 
 
 #### Steps Create a new Bucket
 
-Click services on the nav bar
+Click services on the nav bar.
 
 Hover `storage` -> click on S3
 
-Click the create bucket button on the right.
+Click the Create bucket button on the right.
 
-Leave the default settings, add a name, and unblock public access
+Leave the default settings, add a name, and unblock public access.
 
 Create Button
 
-Click permissions tab, edit the bucket policy
+Click the permissions tab, edit the bucket policy.
 
 Add a new policy
 
-Click the button on the right to add actions. search for S3 then add GetObject
+Click the button on the right to add actions. Search for S3, then add GetObject
 
 ```js
 {
@@ -60,20 +60,20 @@ Click the button on the right to add actions. search for S3 then add GetObject
     ]
 }
 ```
-It should look like the above codeblock
+It should look like the above code block
 
-The resource is found above the menu
+The resource is found above the menu.
 
-#### Steps Create a a new Lambda
+#### Steps Create a new Lambda
 
 
-Click services on the nav bar
+Click services on the nav bar.
 
-Hover `compute` -> click on Lambda
+Hover `compute` -> click on lambda
 
 Click Create function
 
-check default rules
+Check default rules
 
 Select Node 16x
 
@@ -145,37 +145,37 @@ let found = false;
   return imageMetadata;
 };
 ```
-Code used in the Lambda 
+Code used in the lambda 
 select S3 Rekognition tests
-Click the tests, set the name and key inside the nested propertys to make the bucket name and a file you uploaded (if you did not upload one, do this now)
+Click the tests, set the name and key inside the nested properties to make the bucket name and a file you uploaded (if you did not upload one, do this now)
 
 
-#### Steps Create a a new Trigger
+#### Steps Create a new Trigger
 
-inside the newly created Lambda click the New Trigger button
+Inside the newly created lambda, click the New Trigger button
 
 Select the S3
 
 Add a suffix for the file type you want to be triggered. 
 
-create the trigger
+Create the trigger
 
 
 #### Steps Setup permission
 
 Highlight Security, Identity, & Compliance -> Click IAM
 
-click on roles. 
+Click on roles. 
 
-You should see the role you created when you made the new Lambda (see the name of the lamda function in the role name)
+You should see the role you created when you made the new lambda (see the name of the lambda function in the role name)
 
-Check the policy listed, and click attach policys 
+Check the policy listed, and click attach policies 
 
-Add the customer managed roles with the long name, and lamda in the name
+Add the customer-managed roles with the long name and lambda in the name
 
 attach AmazonS3FullAccess by searching S3
 
-Everything should be ready to accept file uploads, and perform tests at this point. 
+Everything should be ready to accept file uploads and perform tests at this point. 
 
 
 #### Features / Routes
@@ -184,9 +184,11 @@ Everything should be ready to accept file uploads, and perform tests at this poi
 
 - Feature two: Created a Lamda function with a trigger to create a JSON. 
 
+#### Collaboration: I worked with Elias, Steven, and Seth to get out the primary lambda function written. 
+
 #### Tests
 
 - How do you run tests?
-On the lambda function console, click the test button with a test.jpg in the bucket
+On the lambda function console, click the test button with a test.jpg in the bucket.
 
 # cloud-server
