@@ -1,17 +1,17 @@
-# image-lamda
-# LAB - 401-D49 Lab-17
+# API- DYNAMO & LAMBDA
+# LAB - 401-D49 Lab-18
 
-## Project: Lamda + S3
+## Project: Restful API
 
 ### Author: Lewis Benson
 
 ### Problem Domain
 
-Create an S3 bucket; create a lambda function with a trigger that creates an images.json when a file is uploaded to the bucket. The JSON will include the image's metadata. 
+Create a fully RESTful application using the AWS Gateway, with DynamoDB and Dynamoose as an ORM.
 
 ### Links and Resources
 
-[images.json](https://numsandstuff.s3.amazonaws.com/images.json)
+[Invoke URL:] (https://w4e42i2xic.execute-api.us-east-1.amazonaws.com/production)
 
 
 ### Setup
