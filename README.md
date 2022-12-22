@@ -11,7 +11,7 @@ Create a fully RESTful application using the AWS Gateway, with DynamoDB and Dyna
 
 ### Links and Resources
 
-[Invoke URL:] (https://w4e42i2xic.execute-api.us-east-1.amazonaws.com/production)
+[Invoke URL](https://w4e42i2xic.execute-api.us-east-1.amazonaws.com/production)
 
 
 ### Setup
@@ -23,9 +23,9 @@ There are no env requirements.
 
 #### How to initialize/run your application (where applicable)
 
-Upload a jpg to the numsandstuff bucket; the lambda will be triggered by the upload and update the images.json file. 
 
-#### Steps Create a new Bucket
+
+#### Steps Create a new Table
 
 Click services on the nav bar.
 
